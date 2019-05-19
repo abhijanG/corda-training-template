@@ -7,6 +7,7 @@ tags
 *.log
 *.log.gz
 *.orig
+.idea/
 
 .gradle
 
@@ -70,3 +71,4 @@ crashlytics-build.properties
 
 # docs related
 docs/virtualenv/
+/bin/

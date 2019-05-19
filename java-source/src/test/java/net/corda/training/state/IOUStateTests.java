@@ -31,13 +31,13 @@ public class IOUStateTests {
      * Hint: {@link Amount} is a template class that takes a class parameter of the token you would like an {@link Amount} of.
      * As we are dealing with cash lent from one Party to another a sensible token to use would be {@link Currency}.
      */
-//    @Test
-//    public void hasIOUAmountFieldOfCorrectType() throws NoSuchFieldException {
-//        // Does the amount field exist?
-//        Field amountField = IOUState.class.getDeclaredField("amount");
-//        // Is the amount field of the correct type?
-//        assertTrue(amountField.getType().isAssignableFrom(Amount.class));
-//    }
+    @Test
+    public void hasIOUAmountFieldOfCorrectType() throws NoSuchFieldException {
+        // Does the amount field exist?
+        Field amountField = IOUState.class.getDeclaredField("amount");
+        // Is the amount field of the correct type?
+        assertTrue(amountField.getType().isAssignableFrom(Amount.class));
+    }
 
     /**
      * Task 2.

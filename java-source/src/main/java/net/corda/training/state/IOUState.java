@@ -22,6 +22,7 @@ public class IOUState implements ContractState {
 
     public IOUState() {}
 
+    Amount<Currency> amount;
     /**
      *  This method will return a list of the nodes which can "use" this state in a valid transaction. In this case, the
      *  lender or the borrower.
