@@ -43,25 +43,25 @@ public class IOUStateTests {
      * Task 2.
      * TODO: Add a 'lender' property of type {@link Party} to the {@link IOUState} class to get this test to pass.
      */
-//    @Test
-//    public void hasLenderFieldOfCorrectType() throws NoSuchFieldException {
-//        // Does the lender field exist?
-//        Field lenderField = IOUState.class.getDeclaredField("lender");
-//        // Is the lender field of the correct type?
-//        assertTrue(lenderField.getType().isAssignableFrom(Party.class));
-//    }
+    @Test
+    public void hasLenderFieldOfCorrectType() throws NoSuchFieldException {
+        // Does the lender field exist?
+        Field lenderField = IOUState.class.getDeclaredField("lender");
+        // Is the lender field of the correct type?
+        assertTrue(lenderField.getType().isAssignableFrom(Party.class));
+    }
 
     /**
      * Task 3.
      * TODO: Add a 'borrower' property of type {@link Party} to the {@link IOUState} class to get this test to pass.
      */
-//    @Test
-//    public void hasBorrowerFieldOfCorrectType() throws NoSuchFieldException {
-//        // Does the borrower field exist?
-//        Field borrowerField = IOUState.class.getDeclaredField("borrower");
-//        // Is the borrower field of the correct type?
-//        assertTrue(borrowerField.getType().isAssignableFrom(Party.class));
-//    }
+    @Test
+    public void hasBorrowerFieldOfCorrectType() throws NoSuchFieldException {
+        // Does the borrower field exist?
+        Field borrowerField = IOUState.class.getDeclaredField("borrower");
+        // Is the borrower field of the correct type?
+        assertTrue(borrowerField.getType().isAssignableFrom(Party.class));
+    }
 
     /**
      * Task 4.
@@ -75,13 +75,13 @@ public class IOUStateTests {
      *   [IOUState.amount] property. You can create an instance of the {@link Amount} class that takes a zero value and a token
      *   representing the currency - which should be the same currency as the [IOUState.amount] property.
      */
-//    @Test
-//    public void hasPaidFieldOfCorrectType() throws NoSuchFieldException {
-//        // Does the paid field exist?
-//        Field paidField = IOUState.class.getDeclaredField("paid");
-//        // Is the paid field of the correct type?
-//        assertTrue(paidField.getType().isAssignableFrom(Amount.class));
-//    }
+    @Test
+    public void hasPaidFieldOfCorrectType() throws NoSuchFieldException {
+        // Does the paid field exist?
+        Field paidField = IOUState.class.getDeclaredField("paid");
+        // Is the paid field of the correct type?
+        assertTrue(paidField.getType().isAssignableFrom(Amount.class));
+    }
 
     /**
      * Task 5.

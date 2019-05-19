@@ -20,9 +20,19 @@ import javax.validation.constraints.NotNull;
  */
 public class IOUState implements ContractState {
 
-    public IOUState() {}
-
     Amount<Currency> amount;
+    Party lender;
+    Party borrower;
+    Amount<Currency> paid;
+    private final UniqueIdentifier linearId;
+
+    public IOUState(Amount<Currency> amount, Party lender, Party borrower,Amount<Currency> paid,UniqueIdentifier linearId) {
+        this.amount = amount;
+        this.lender = lender;
+        this.borrower = borrower;
+        this.paid = paid;
+        this.linearId = linearId;
+    }
     /**
      *  This method will return a list of the nodes which can "use" this state in a valid transaction. In this case, the
      *  lender or the borrower.
